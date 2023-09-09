@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos list</title>
+
+    <style>
+        html {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            /* ↓横スクロール強制非表示↓ */
+            overflow-x: hidden;
+        }
+
+        header,
+        h2 {
+            margin: 20px 30px;
+        }
+
+        /* ↓リンク */
+        a:link {
+            color: rgb(255, 255, 255);
+            /* 下線無し */
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.13);
+            color: rgb(173, 173, 173);
+        }
+
+        a:visited {
+            color: rgba(152, 152, 152, 0.587);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .video {
+            width: 35%;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .info {
+            display: block;
+            margin: auto 0;
+        }
+
+        .equipment {
+            text-align: center;
+            margin: 20px 30px 50px 30px;
+        }
+
+        .equipment p {
+            font-size: smaller;
+        }
+
+        /* @media screen and (max-width: 600px) {
+            .video {
+                width: 100%;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contact</h1>
+        <ul>
+            <li><a href="https://www.youtube.com/channel/UC7hE2BE8Cf-7aqFawvWrHxQ">TAKAX MUSIC</a></li>
+            <li><a href="https://twitter.com/TakaxMusic_" target="_blank">Twitter (X)</a></li>
+            <li><a href="https://www.instagram.com/takax_music/" target="_blank">Instagram</a></li>
+            <li><a href="https://soundcloud.com/takax-music" target="_blank">SoundCloud</a></li>
+        </ul>
+
+        <h1>Music List</h1>
+        <ul>
+            <li><a href="#1">Beat Music</a></li>
+            <li><a href="#2">Lo-Fi Beats</a></li>
+            <li><a href="#3">Wagakki - Shamisen Beats</a></li>
+            <li><a href="#4">Piano</a></li>
+            <li><a href="#5">Free To Use</a></li>
+        </ul>
+
+        <h1>New Music</h1>
+        <div class="info">
+            <h3>The Autumn</h3>
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/8ZRJpEJ1Imk?si=wRWirxia_wY4feB4"
+                title="The Autumn" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <p>Page Update: 09/2023</p>
+    </header>
+
+    <main>
+        <h2 id="1">Beat Music</h2>
+
+        <div class="container">
+            <div class="video">
+                <h3>The Autumn</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/8ZRJpEJ1Imk?si=obNqFEXHuWD_I795"
+                    title="The Autumn" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Cybercity</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/ofiio7tj_Zs?si=01c1Q7n_PK-BWNLx"
+                    title="Cybercity" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Summer Mix</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/d2vJfi9QG9A?si=s-2fqxKxg_JUhl36"
+                    title="Summer Mix" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>The Winter II</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/XxjWosF0wNA?si=S5aHEEohWBcLLpvV"
+                    title="The Winter II" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>MOB Violent</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/CvO8WpUAgx0?si=yq3FvaveoU1aZUAn"
+                    title="MOB Violent" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>The Winter</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/GSc4nudIrOA?si=u2GckADTTukgDlHe"
+                    title="The Winter" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>On My Way</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/yrMhjD_Hi2w?si=nOHUkT8lVNKbjwcI"
+                    title="On My Way" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Purple Sky</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/gMnn83LM3YY?si=pM1TOBVanUeX1Zb9"
+                    title="Purple Sky" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Summer Beach</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/vrUDJ25uFYk?si=DJvPngJ-Gm_L23Yn"
+                    title="Summer Beach" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Summer Disco</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/op0SXwTpWOA?si=T9-daPustHcV_18w"
+                    title="Summer Disco" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>MOB</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5fiiIUAJtC4?si=JNiJgbbt-jKYB1sH"
+                    title="MOB" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Town Network</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/GoSABNR1Q0E?si=q_N3qiJ3qIrGP_sI"
+                    title="Town Network" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Breakthrough Advanced</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/kAQgQERdPrw?si=HW63ZX-n-_38AKjd"
+                    title="Breakthrough Advanced" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Shooting Reloaded Edition</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/qY8Pt6nMT5o?si=ABbkPt2sT8yQP59M"
+                    title="Shooting Reloaded Edition" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Breakthrough</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/TCp-7IMnDS4?si=4_XWK0eeWX7i0phW"
+                    title="Breakthrough" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>松 Matsu - Shamisen Beats</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/-pNwriEUm0A?si=cVZ3cZ8JEIzynXyv"
+                    title="松 Matsu - Shamisen Beats" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Urban Captivity - Shooting Dance Edition</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/CK_SKMtQMxQ?si=EnH3xnkL_K-JrJGc"
+                    title="Urban Captivity - Shooting Dance Edition" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>MORE FORWARD</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/8xHM-pa5Rrw?si=ZRA29dMxSXPqRc15"
+                    title="MORE FORWARD" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>IRONWORKS Advanced</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Rrj2fhStjfY?si=87jBjLzoqC04dlfv"
+                    title="IRONWORKS Advanced" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <!-- <div class="video">
+            <h3></h3>
+            <iframe width="100%" height="auto" src="https" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div> -->
+        </div>
+
+        <h2 id="2">Lo-Fi Beats</h2>
+
+        <div class="container">
+            <div class="video">
+                <h3>Lo-Fi Beats - Commuting Time</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/iiOzoSkmqgc?si=QJWYia5FAytXSvXj"
+                    title="Lo-Fi Beats - Commuting Time" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Lo-Fi Beats - Staying up late</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/pBQ1LLiq8_4?si=ALW55-VcZsNXOfic"
+                    title="Lo-Fi Beats - Staying up late" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Lo-Fi Beats - Blue sky</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/i2JnEfcills?si=JifkM_FEVzg81rma"
+                    title="Lo-Fi Beats - Blue sky" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Lo-Fi Beats - Snow in the midnight</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Eej9zneMePE?si=7PL-jWrwh9v9JniE"
+                    title="Lo-Fi Beats - Snow in the midnight" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Lo-Fi Beats - Come Back Home</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/RstKAYiCETc?si=HKES9k0QLDwIybrG"
+                    title="Lo-Fi Beats - Come Back Home" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <h2 id="3">Wagakki - Shamisen Beats</h2>
+
+        <div class="container">
+            <div class="video">
+                <h3>Shamisen Beat #2</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/RHz4xySvgxc?si=1FWpXCTqHL6yvA5M"
+                    title="Shamisen Beat #2" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Shamisen Beat</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/RXl3RUobRCs?si=TMB44qFZKSCG1e_9"
+                    title="Shamisen Beat" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <h2 id="4">Piano</h2>
+
+        <div class="container">
+            <div class="video">
+                <h3></h3>
+                <iframe width="100%" height="auto" src="https" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3></h3>
+                <iframe width="100%" height="auto" src="https" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <h2 id="5">Free To Use</h2>
+
+        <div class="container">
+            <div class="video">
+                <h3>The Second Wave</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/nPcUHIL0bkg?si=w2E43QlpBPO3x0zb"
+                    title="The Second Wave" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Trial And Error</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/7B2AuHNhnW0?si=hCj2GZfNzXNLM2MH"
+                    title="Trial And Error" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Pandemic</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/wjDkUlyK7dA?si=UQWdCvMylATDdCXA"
+                    title="Pandemic" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>My Way Concentrated Edition</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/OUbRO1yIctE?si=LaROMxiO1S29sPpQ"
+                    title="My Way Concentrated Edition" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3></h3>
+                <iframe width="100%" height="auto" src="https" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3></h3>
+                <iframe width="100%" height="auto" src="https" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3></h3>
+                <iframe width="100%" height="auto" src="https" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3></h3>
+                <iframe width="100%" height="auto" src="https" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3></h3>
+                <iframe width="100%" height="auto" src="https" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3></h3>
+                <iframe width="100%" height="auto" src="https" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="equipment">
+            <h2>Equipment</h2>
+
+            <h3>Software</h3>
+            <p>Ableton Live 11</p>
+
+            <h3>Main Machine</h3>
+            <p>Windows Surface Pro</p>
+            <p>DAIV Z4</p>
+
+            <h3>Monitor</h3>
+            <p>Shure SRH440</p>
+            <p>Shure Aonic50</p>
+            <p>Shure SE215</p>
+            <p>Final Audio E4000</p>
+        </div>
+    </footer>
+</body>
+
+</html>
