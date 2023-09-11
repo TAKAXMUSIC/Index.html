@@ -7,14 +7,13 @@
     <title>Videos list</title>
 
     <style>
-        html {
-            background-color: rgb(0, 0, 0);
-            color: white;
-            /* ↓横スクロール強制非表示↓ */
-            overflow-x: hidden;
+        header>img {
+            width: 100%;
+            max-width: 95%;
+            height: auto;
         }
 
-        header,
+        nav,
         h2 {
             margin: 20px 30px;
         }
@@ -66,11 +65,24 @@
                 width: 100%;
             }
         } */
+
+        html {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            /* ↓横スクロール強制非表示↓ */
+            overflow-x: hidden;
+        }
     </style>
 </head>
 
 <body>
     <header>
+        <img
+            src="https://user-images.githubusercontent.com/119456328/205171697-dabcb502-55c9-49a0-be62-d0b2760faac3.jpg">
+    </header>
+
+    <nav>
+
         <p>Page Update: 09/2023</p>
         <h1>Contact</h1>
         <ul>
@@ -97,7 +109,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
         </div>
-    </header>
+    </nav>
 
     <main>
         <h2 id="1">Beat Music</h2>
