@@ -84,11 +84,69 @@
             font-size: smaller;
         }
 
-        /* @media screen and (max-width: 600px) {
-            .video {
-                width: 100%;
+        /* ↓↓PC↓↓ */
+        @media screen and (min-width:960px) {
+
+            html {
+                width: 90%;
+                margin: 0 auto;
             }
-        } */
+
+            header>img {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                display: block;
+            }
+
+            nav>p {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            nav,
+            h2 {
+                font-size: 20px;
+                line-height: 2;
+                margin: 20px 30px;
+            }
+
+            nav>h1,
+            .info {
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            nav>.contact>ul,
+            .musiclist>ul {
+                /* ulタグをflexコンテナにする */
+                display: flex;
+                /* ulタグの幅に収まらない場合は改行する */
+                flex-wrap: wrap;
+                /* ulタグの中央にliタグを配置する */
+                justify-content: center;
+                /* liタグの高さを揃える */
+                align-items: center;
+                /* liタグのマーカーを消す */
+                list-style-type: none;
+            }
+
+            .contact li,
+            .musiclist li {
+                margin: 0 40px;
+            }
+
+            .video {
+                width: 30%;
+                height: auto;
+                margin: 10px;
+                text-align: center;
+
+            }
+
+        }
+
+        /* ↑↑PC↑↑ */
     </style>
 </head>
 
@@ -98,6 +156,40 @@
             src="https://user-images.githubusercontent.com/119456328/205171697-dabcb502-55c9-49a0-be62-d0b2760faac3.jpg">
     </header>
 
+    <nav>
+        <p>Page Update: 09/2023</p>
+
+        <h1>Contact</h1>
+        <div class="contact">
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UC7hE2BE8Cf-7aqFawvWrHxQ">TAKAX MUSIC</a></li>
+                <li><a href="https://twitter.com/TakaxMusic_" target="_blank">Twitter (X)</a></li>
+                <li><a href="https://www.instagram.com/takax_music/" target="_blank">Instagram</a></li>
+                <li><a href="https://soundcloud.com/takax-music" target="_blank">SoundCloud</a></li>
+            </ul>
+        </div>
+
+        <h1>Music List</h1>
+        <div class="musiclist">
+            <ul>
+                <li><a href="#1">Beat Music</a></li>
+                <li><a href="#2">Lo-Fi Beats</a></li>
+                <li><a href="#3">Wagakki - Shamisen Beats</a></li>
+                <li><a href="#4">Piano</a></li>
+                <li><a href="#5">Free To Use</a></li>
+            </ul>
+        </div>
+
+        <h1>New Music</h1>
+        <div class="info">
+            <h3>The Autumn</h3>
+            <iframe width="auto" height="auto"
+                src="https://www.youtube.com/embed/8ZRJpEJ1Imk?si=wRWirxia_wY4feB4?autoplay=1&mute=1" title="The Autumn"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </nav>
     <nav>
 
         <p>Page Update: 09/2023</p>
@@ -122,8 +214,9 @@
         <div class="info">
             <h3>The Autumn</h3>
             <!-- 自動再生＆ミュート ?autoplay=1&mute=1  -->
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/8ZRJpEJ1Imk?si=wRWirxia_wY4feB4?autoplay=1&mute=1"
-                title="The Autumn" frameborder="0"
+            <iframe width="auto" height="auto"
+                src="https://www.youtube.com/embed/8ZRJpEJ1Imk?si=wRWirxia_wY4feB4?autoplay=1&mute=1" title="The Autumn"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
         </div>
