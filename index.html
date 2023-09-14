@@ -32,6 +32,11 @@
             margin: 1px;
         }
 
+        .message {
+            font-size: 60px;
+            text-align: center;
+        }
+
         nav>p {
             font-size: 12px;
             text-align: center;
@@ -159,6 +164,10 @@
 
     <nav>
         <p>Page Update: 09/2023</p>
+
+        <div class="message">
+            <p id="message">...NOW LOADING...</p>
+        </div>
 
         <h1>Contact</h1>
         <div class="contact">
@@ -529,7 +538,16 @@
                     allowfullscreen></iframe>
             </div> -->
         </div>
+
+        <script>
+            setTimeout(function () {
+                document.getElementById("message").style.display = "none";
+            }, 15000);
+        </script>
+
     </main>
+
+
 
     <footer>
         <div class="equipment">
