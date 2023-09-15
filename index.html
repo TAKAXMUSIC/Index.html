@@ -52,6 +52,15 @@
             }
         }
 
+        /* ↓↓ローディングバー↓↓ */
+        progress {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* ↑↑ローディングバー↑↑ */
+
         nav>p {
             font-size: 12px;
             text-align: center;
@@ -222,6 +231,9 @@
         <div class="message">
             <p id="message">...NOW LOADING...</p>
         </div>
+        <!-- ↓↓ローディングバー↓↓ -->
+        <progress id="prog1" max="100" min="0" value="0"></progress>
+        <!-- ↑↑ローディングバー↑↑ -->
 
         <h1>Contact</h1>
         <div class="contact">
@@ -594,9 +606,37 @@
         </div>
 
         <script>
+            // ↓↓メッセージ↓↓
             setTimeout(function () {
                 document.getElementById("message").style.display = "none";
             }, 15000);
+            // ↑↑メッセージ↑↑
+
+            // ↓↓ローディングバー↓↓
+            function reset() {
+                var gage = document.getElementById('prog1').value;
+                if (gage == 100) {
+                    document.getElementById('prog1').value = 0;
+                }
+            }
+
+            function get_prog() {
+                var now = document.getElementById('prog1');
+                if (now.value < now.max) {
+                    now.value++;
+                    setTimeout(get_prog, 150); // 150ミリ秒ごとに更新（15秒かけるため）
+                } else {
+                    reset();
+                    // 15秒後にプログレスバーを非表示にする
+                    setTimeout(function () {
+                        document.getElementById('prog1').style.display = 'none';
+                    }, 0); // 0ミリ秒後に非表示にするためにタイムアウトを0に設定
+                }
+            }
+
+            // ページが読み込まれたらすぐに開始
+            window.onload = get_prog;
+            // ↑↑ローディングバー↑↑
         </script>
 
     </main>
