@@ -33,9 +33,23 @@
         }
 
         .message {
-            font-size: 60px;
+
+            /* 点滅 */
+            animation: blinking 1s ease-in-out infinite alternate;
+
+            font-size: 20px;
             text-align: center;
             margin: 10px;
+        }
+
+        @keyframes blinking {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
 
         nav>p {
@@ -76,9 +90,40 @@
             text-align: center;
         }
 
+        /* ↑↑リンク↑↑ */
+
         .info {
             display: block;
             margin: auto 0;
+            text-align: center;
+        }
+
+        .new {
+            padding: 10px 0;
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            background-image: linear-gradient(70deg,
+                    /* font color */
+                    #ffffff 85%,
+                    /* font color */
+                    #FFF 50%,
+                    #686767 15%);
+            background-size: 500% 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: shine 2s infinite;
+        }
+
+        @keyframes shine {
+            0% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .equipment {
@@ -105,6 +150,10 @@
                 display: block;
             }
 
+            .message {
+                font-size: 50px;
+            }
+
             nav {
                 margin: 20px 30px;
             }
@@ -122,6 +171,10 @@
                 line-height: 2;
                 text-align: center;
                 margin: 0 auto;
+            }
+
+            .new {
+                font-size: 30px;
             }
 
             nav>.contact>ul,
