@@ -220,6 +220,42 @@
 </head>
 
 <body>
+    <script>
+        // ページが読み込まれたらすぐにメッセージとプログレスバーを開始
+        window.onload = function () {
+            var messageElement = document.getElementById("message");
+            var progressBar = document.getElementById("prog1");
+
+            // メッセージ表示
+            messageElement.style.display = "block";
+
+            // ローディングバー
+            var interval = 150; // プログレスバーの更新間隔（150ミリ秒ごとに更新）
+            var maxProgress = 100;
+            var currentProgress = 0;
+
+            function updateProgress() {
+                currentProgress++;
+                progressBar.value = currentProgress;
+
+                if (currentProgress < maxProgress) {
+                    setTimeout(updateProgress, interval);
+                } else {
+                    // 10秒後にメッセージとプログレスバーを非表示にする
+                    setTimeout(function () {
+                        messageElement.style.display = "none";
+                        progressBar.style.display = "none";
+                    }, 10000);
+                }
+            }
+
+            // プログレスバーを開始
+            updateProgress();
+        };
+    </script>
+
+
+
     <header>
         <img
             src="https://user-images.githubusercontent.com/119456328/205171697-dabcb502-55c9-49a0-be62-d0b2760faac3.jpg">
@@ -605,7 +641,7 @@
             </div> -->
         </div>
 
-        <script>
+        <!-- <script>
             // ↓↓メッセージ↓↓
             setTimeout(function () {
                 document.getElementById("message").style.display = "none";
@@ -637,7 +673,7 @@
             // ページが読み込まれたらすぐに開始
             window.onload = get_prog;
             // ↑↑ローディングバー↑↑
-        </script>
+        </script> -->
 
     </main>
 
