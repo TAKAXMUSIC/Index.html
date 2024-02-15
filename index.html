@@ -53,11 +53,11 @@
         }
 
         /* ↓↓ローディングバー↓↓ */
-        progress {
+        /* progress {
             width: 80%;
             display: block;
             margin: 0 auto;
-        }
+        } */
 
         /* ↑↑ローディングバー↑↑ */
 
@@ -216,60 +216,44 @@
         }
 
         /* ↑↑PC↑↑ */
+
+        #to-top {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            border: 5px solid #aaa;
+            border-radius: 10px;
+            bottom: 50px;
+            right: 50px;
+            display: block;
+            line-height: 100px;
+            text-align: center;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            color: #cccccc;
+        }
     </style>
+
 </head>
 
 <body>
-    <script>
-        // ページが読み込まれたらすぐにメッセージとプログレスバーを開始
-        window.onload = function () {
-            var messageElement = document.getElementById("message");
-            var progressBar = document.getElementById("prog1");
-
-            // メッセージ表示
-            messageElement.style.display = "block";
-
-            // ローディングバー
-            var interval = 150; // プログレスバーの更新間隔（150ミリ秒ごとに更新）
-            var maxProgress = 100;
-            var currentProgress = 0;
-
-            function updateProgress() {
-                currentProgress++;
-                progressBar.value = currentProgress;
-
-                if (currentProgress < maxProgress) {
-                    setTimeout(updateProgress, interval);
-                } else {
-                    // 10秒後にメッセージとプログレスバーを非表示にする
-                    setTimeout(function () {
-                        messageElement.style.display = "none";
-                        progressBar.style.display = "none";
-                    }, 10000);
-                }
-            }
-
-            // プログレスバーを開始
-            updateProgress();
-        };
-    </script>
-
-
-
     <header>
         <img
             src="https://user-images.githubusercontent.com/119456328/205171697-dabcb502-55c9-49a0-be62-d0b2760faac3.jpg">
     </header>
 
     <nav>
-        <p>Page Update: 09/2023</p>
+        <p>Page Update: 02/2024</p>
 
         <div class="message">
-            <p id="message">...NOW LOADING...</p>
+            <p>PLEASE WAIT</p>
+            <p>...LOADING...</p>
         </div>
-        <!-- ↓↓ローディングバー↓↓ -->
-        <progress id="prog1" max="100" min="0" value="0"></progress>
-        <!-- ↑↑ローディングバー↑↑ -->
+        <!-- ↓↓ローディングバー 表示↓↓ -->
+        <!-- <progress id="prog1" max="100" min="0" value="0"></progress> -->
+        <!-- ↑↑ローディングバー 表示↑↑ -->
 
         <h1>Contact</h1>
         <div class="contact">
@@ -294,9 +278,9 @@
 
         <h1>New Music</h1>
         <div class="info">
-            <p>The Autumn</p>
+            <p>The Orion</p>
             <iframe width="auto" height="auto"
-                src="https://www.youtube.com/embed/8ZRJpEJ1Imk?si=wRWirxia_wY4feB4?autoplay=1&mute=1" title="The Autumn"
+                src="https://www.youtube.com/embed/4-TuAg_VzRU?si=FZjOzBM3NyYHtaIZ?autoplay=1&mute=1" title="The Autumn"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
@@ -307,6 +291,15 @@
         <h2 id="1">Beat Music</h2>
 
         <div class="container">
+
+            <div class="video">
+                <h3>The Orion</h3>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/4-TuAg_VzRU?si=FZjOzBM3NyYHtaIZ"
+                    title="The Orion" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
             <div class="video">
                 <h3>The Autumn</h3>
                 <iframe width="100%" height="auto" src="https://www.youtube.com/embed/8ZRJpEJ1Imk?si=obNqFEXHuWD_I795"
@@ -641,39 +634,41 @@
             </div> -->
         </div>
 
-        <!-- <script>
+        <script>
+
+            // // ↓↓ローディングバー↓↓
+            // function reset() {
+            //     var gage = document.getElementById('prog1').value;
+            //     if (gage == 100) {
+            //         document.getElementById('prog1').value = 0;
+            //     }
+            // }
+
+            // function get_prog() {
+            //     var now = document.getElementById('prog1');
+            //     if (now.value < now.max) {
+            //         now.value++;
+            //         setTimeout(get_prog, 150); // 150ミリ秒ごとに更新（15秒かけるため）
+            //     } else {
+            //         reset();
+            //         // 15秒後にプログレスバーを非表示にする
+            //         setTimeout(function () {
+            //             document.getElementById('prog1').style.display = 'none';
+            //         }, 0); // 0ミリ秒後に非表示にするためにタイムアウトを0に設定
+            //     }
+            // }
+
+            // // ページが読み込まれたらすぐに開始
+            // window.onload = get_prog;
+            // // ↑↑ローディングバー↑↑
+
             // ↓↓メッセージ↓↓
             setTimeout(function () {
                 document.getElementById("message").style.display = "none";
-            }, 15000);
+            }, 10000);
             // ↑↑メッセージ↑↑
 
-            // ↓↓ローディングバー↓↓
-            function reset() {
-                var gage = document.getElementById('prog1').value;
-                if (gage == 100) {
-                    document.getElementById('prog1').value = 0;
-                }
-            }
-
-            function get_prog() {
-                var now = document.getElementById('prog1');
-                if (now.value < now.max) {
-                    now.value++;
-                    setTimeout(get_prog, 150); // 150ミリ秒ごとに更新（15秒かけるため）
-                } else {
-                    reset();
-                    // 15秒後にプログレスバーを非表示にする
-                    setTimeout(function () {
-                        document.getElementById('prog1').style.display = 'none';
-                    }, 0); // 0ミリ秒後に非表示にするためにタイムアウトを0に設定
-                }
-            }
-
-            // ページが読み込まれたらすぐに開始
-            window.onload = get_prog;
-            // ↑↑ローディングバー↑↑
-        </script> -->
+        </script>
 
     </main>
 
@@ -697,6 +692,10 @@
             <p>Final Audio E4000</p>
         </div>
     </footer>
+
+    <!-- ↓ TOP_Button ↓ -->
+    <a href="#" id="to-top">TOP</a>
+
 </body>
 
 </html>
